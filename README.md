@@ -63,20 +63,26 @@ See all of it, with pictures, on the [Features page](https://getwingman.tech/fea
 | **Phone** | Android 6 or later |
 | **Both** | An internet connection. VS Code and Claude Code only for the parts that use them: Finder, Chrome, your apps, Keep awake and Away work without either. |
 
-1. **Download the Mac app.** Get [**Wingman.zip**](https://github.com/rohan-phogat/wing/releases/latest/download/Wingman.zip), open it, and move Wingman to your Applications folder.
-2. **Open it** (see the note below the first time). Wingman lives in your menu bar.
+1. **Get the Mac app.** Download [**Wingman.zip**](https://github.com/rohan-phogat/wing/releases/latest/download/Wingman.zip), open it, and move Wingman to your Applications folder. Or install it from Terminal, which also skips the macOS warning below:
+
+   ```sh
+   curl -fsSL https://getwingman.tech/install.sh | bash
+   ```
+
+   The script downloads the same Wingman.zip from this repository's releases, checks it, puts Wingman in your Applications folder and opens it. You can [read it first](https://getwingman.tech/install.sh).
+2. **Open it.** The Terminal command does this for you. If you downloaded the zip, see the note below the first time. Wingman lives in your menu bar.
 3. **Set it up.** Choose a PIN (six to twelve digits) and say what Wingman may use on your Mac. It then shows a code.
 4. **Pair your phone.** Your Mac hands the Android app to your phone when you set it up, or you can [download the Android app](https://getwingman.tech/download/android) directly (Android asks you to allow installs from your browser the first time). Open Wingman on your phone and scan the code, then approve the new phone on your Mac. You are connected.
 
 > [!IMPORTANT]
-> **macOS blocks Wingman the first time you open it.** Wingman is not notarized by Apple yet, so macOS says it cannot verify the app. That is expected, and you only do this once:
+> **If you downloaded the zip, macOS blocks Wingman the first time you open it.** Wingman is not notarized by Apple yet, so macOS says it cannot verify the app. That is expected, and you only do this once:
 >
 > 1. Try to open Wingman, then click **Done**.
 > 2. Open **System Settings → Privacy & Security** and scroll down to the **Security** section.
 > 3. Next to “Wingman was blocked”, click **Open Anyway**, enter your password, then click **Open**.
 
 <details>
-<summary>Prefer Terminal?</summary>
+<summary>Already downloaded the zip and prefer Terminal?</summary>
 
 <br>
 
