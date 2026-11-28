@@ -1,0 +1,43 @@
+name: Ask for a feature
+description: Something Wingman could do that it does not do yet.
+title: "[Idea] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for the idea. You can also send it from the app: press **Report a bug** in the Mac app's sidebar, or open **Settings** on your phone.
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part is it about?
+      options:
+        - Claude chats
+        - Pop-up windows or notification cards
+        - VS Code
+        - Copilot
+        - Terminal
+        - Finder
+        - Chrome
+        - Apps
+        - Control centre or home widgets
+        - Keep awake or Away
+        - Pairing or connecting
+        - The Mac app
+        - The Android app
+        - Something new
+    validations:
+      required: true
+  - type: textarea
+    id: idea
+    attributes:
+      label: What would you like Wingman to do?
+    validations:
+      required: true
+  - type: textarea
+    id: why
+    attributes:
+      label: What are you trying to get done?
+      description: Tell us about the moment you wished it could do this.
+    validations:
+      required: false

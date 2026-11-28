@@ -1,0 +1,93 @@
+name: Report a bug
+description: Something does not work the way it should.
+title: "[Bug] "
+labels: ["bug"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for telling us. The more you can say, the faster we can fix it.
+        You can also report from the app: press **Report a bug** in the Mac app's sidebar, or open **Settings** on your phone.
+        **Please do not put passwords or anything private in this report or in a screenshot.**
+  - type: dropdown
+    id: area
+    attributes:
+      label: Which part is it?
+      options:
+        - Claude chats
+        - Pop-up windows or notification cards
+        - VS Code
+        - Copilot
+        - Terminal
+        - Finder
+        - Chrome
+        - Apps
+        - Control centre or home widgets
+        - Keep awake or Away
+        - Pairing or connecting
+        - Updates
+        - The Mac app
+        - The Android app
+        - Something else
+    validations:
+      required: true
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: What happened?
+      description: What did you do, and what did you see?
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect instead?
+    validations:
+      required: false
+  - type: textarea
+    id: steps
+    attributes:
+      label: How can we make it happen again?
+      placeholder: |
+        1. Open ...
+        2. Tap ...
+        3. See ...
+    validations:
+      required: false
+  - type: input
+    id: mac-version
+    attributes:
+      label: Wingman version on your Mac
+      placeholder: e.g. 0.3.14
+    validations:
+      required: false
+  - type: input
+    id: android-version
+    attributes:
+      label: Wingman version on your phone
+      placeholder: e.g. 1.40
+    validations:
+      required: false
+  - type: input
+    id: macos
+    attributes:
+      label: Your Mac
+      description: The macOS version and the kind of Mac.
+      placeholder: e.g. macOS 15.1, MacBook Pro M3
+    validations:
+      required: false
+  - type: input
+    id: phone
+    attributes:
+      label: Your phone
+      description: The phone and its Android version.
+      placeholder: e.g. Pixel 8, Android 15
+    validations:
+      required: false
+  - type: textarea
+    id: media
+    attributes:
+      label: Screenshots or a recording
+      description: Drag a file into this box. Please hide anything private first.
+    validations:
+      required: false

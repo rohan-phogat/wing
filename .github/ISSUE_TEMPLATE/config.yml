@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Answers to common questions
+    url: https://getwingman.tech/faq
+    about: Setup, pairing, what Wingman keeps, and what to do when your phone says your Mac is offline.
+  - name: Report a security problem
+    url: https://github.com/rohan-phogat/wing/security/advisories/new
+    about: Please report security problems privately here, not in a public issue.
